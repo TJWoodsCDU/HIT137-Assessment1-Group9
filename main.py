@@ -4,7 +4,7 @@ Group Name: Group 9
 Group Members:
 
 Janelle Dobunaba - ######
-Kien Nguyen - ######
+Kien Nguyen - 400447
 TJ Woods - 402983
 Andrew Yang - ######
 
