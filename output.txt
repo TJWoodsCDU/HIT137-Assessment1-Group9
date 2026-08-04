@@ -1,8 +1,30 @@
+Task 1: Character Census
 
-----------------------
+    Total number of characters: 212,
+    Number of letters: 160,
+    Number of numbers: 1,
+    Number of whitespace characters: 42,
+    Number of other characters: 9
 
-----------------------
+--------------------
 
-----------------------
 
-----------------------
+
+--------------------
+
+Task 3: Word Statistics
+
+    Total number of words: 40,
+    Longest word: situations,
+    Longest word length: 10 characters,
+    Average word length: 4.1 characters
+
+--------------------
+
+Task 4: Line and Sentence Analysis
+
+    Number of lines: 5,
+    Number of sentences: 5,
+    Length of longest line: 62
+
+--------------------
