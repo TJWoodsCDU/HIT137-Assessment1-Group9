@@ -49,16 +49,16 @@ def task3(text) -> str:
     total_length = 0
     
     for word in words:
-        word_length = len(word)
-        total_length += word_length
-        if word_length > longest_length:
-            longest_length = word_length
-            longest_length = word
+        word_len = len(word)
+        total_length += word_len
+        if word_len > longest_length:
+            longest_length = word_len
+            longest_word = word
     
-        if total_words > 0:
-            average_length = round(total_length / total_words, 1)
-        else:
-            average_length = 0.0
+    if total_words > 0:
+        average_length = round(total_length / total_words, 1)
+    else:
+        average_length = 0.0
 
     report = ""
 
