@@ -2,4 +2,4 @@ This is example text. Feel free to change this or
 don't; I don't care all that much. It should have examples for
 all of the situations we are testing for in each task.
 
-See that? That's an empty line right there!
+See that? That's 1 empty line right there!
