@@ -14,45 +14,6 @@ See README.md for how to input and where to find output
 
 def task1(text) -> str:
     """Character Census"""
-    words = []
-    current_word = ""
-
-    for character in text:
-        if character.isalpha() or character == "'":
-            current_word += character
-        else:
-            if current_word != "":
-                words.append(current_word)
-                current_word = ""
-
-    if current_word != "":
-        words.append(current_word)
-
-    total_words = len(words)
-
-    longest_word = ""
-    longest_length = 0
-    total_length = 0
-
-    for word in words:
-        word_length = len(word)
-        total_length += word_length
-        if word_length > longest_length:
-            longest_length = word_length
-            longest_length = word
-
-        if total_words > 0:
-            average_length = round(total_length / total_words, 1)
-        else:
-            average_length = 0.0
-
-    dict = {
-        "total_words" : total_words,
-        "longest_word": longest_word,
-        "longest_length" : longest_length,
-        "average_length" : average_length,
-    }
-
     report = ""
 
     return report
@@ -67,6 +28,38 @@ def task2(text) -> str:
 
 def task3(text) -> str:
     """Word Statistics"""
+    words = []
+    current_word = ""
+    
+    for character in text:
+        if character.isalpha() or character == "'":
+            current_word += character
+        else:
+            if current_word != "":
+                words.append(current_word)
+                current_word = ""
+    
+    if current_word != "":
+        words.append(current_word)
+    
+    total_words = len(words)
+    
+    longest_word = ""
+    longest_length = 0
+    total_length = 0
+    
+    for word in words:
+        word_length = len(word)
+        total_length += word_length
+        if word_length > longest_length:
+            longest_length = word_length
+            longest_length = word
+    
+        if total_words > 0:
+            average_length = round(total_length / total_words, 1)
+        else:
+            average_length = 0.0
+
     report = ""
 
     return report
