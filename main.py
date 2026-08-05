@@ -92,7 +92,7 @@ def task2(text) -> str:
                elif lower_char == "e"
                    vowel_e += 1
                elif lower_char == "i":
-                   Vowel_i += 1
+                   vowel_i += 1
                elif lower_char == "o":
                    vowel_o += 1
                elif lower_char == "u":
