@@ -6,7 +6,7 @@ Group Members:
 Janelle Dobunaba - ######
 Kien Nguyen - 400447
 TJ Woods - 402983
-Andrew Yang - ######
+Yucheng Yang - 394389
 
 See README.md for how to input and where to find output
 """
@@ -64,8 +64,52 @@ def task1(text) -> str:
 def task2(text) -> str:
     """Case and Vowel Breakdown"""
 
-    report = ""
+    upper_count = 0
+    lower_count = 0
+    total_vowels = 0
+    total_consonants = 0
+    vowel_a = 0
+    vowel_e = 0
+    vowel_i = 0
+    vowel_o = 0
+    vowel_u = 0
+    vowels = "aeiou"
 
+    for char in text:
+        if char.isalpha():
+            # Count upper / lower case
+            if char.isupper():
+                upper_count += 1
+            else:
+                lower_count += 1
+
+            lower_char = char.lower()
+            if lower_char in vowels:
+                total_vowels += 1
+                # Count each single vowel
+               if lower_char == "a":
+                   vowel_a += 1 
+               elif lower_char == "e"
+                   vowel_e += 1
+               elif lower_char == "i":
+                   Vowel_i += 1
+               elif lower_char == "o":
+                   vowel_o += 1
+               elif lower_char == "u":
+                   vowel_u += 1
+         else:
+            total_consonants += 1
+  
+    # Format report                   
+    report = f"""
+    Task 2: Case and Vowel Breakdown
+
+    Uppercase letters: {upper_count},
+    Lowercase letters: {lower_count},
+    Total vowels: {total_vowels},
+    Individual vowel counts:
+        a: {vowel_a},  e: {vowel_e},  i: {vowel_i},  o: {vowel_o},  u: {vowel_u},
+    """
     return report
 
 
