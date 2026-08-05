@@ -83,20 +83,20 @@ def task2(text) -> str:
             else:
                 lower_count += 1
 
-            lower_char = char.lower()
+           lower_char = char.lower()
             if lower_char in vowels:
                 total_vowels += 1
                 # Count each single vowel
-               if lower_char == "a":
-                   vowel_a += 1 
-               elif lower_char == "e"
-                   vowel_e += 1
-               elif lower_char == "i":
-                   vowel_i += 1
-               elif lower_char == "o":
-                   vowel_o += 1
-               elif lower_char == "u":
-                   vowel_u += 1
+                if lower_char == "a":
+                    vowel_a += 1
+                elif lower_char == "e":
+                    vowel_e += 1
+                elif lower_char == "i":
+                    vowel_i += 1
+                elif lower_char == "o":
+                    vowel_o += 1
+                elif lower_char == "u":
+                    vowel_u += 1
          else:
             total_consonants += 1
   
